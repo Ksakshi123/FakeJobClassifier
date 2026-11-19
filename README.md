@@ -17,6 +17,7 @@ FakeJobClassification/
 │   ├── fake_job_model/
 │   └── vectorizer.pkl (optional)
 └── utils/
+    ├── model_loader.py
     └── preprocessing.py
 ```
 

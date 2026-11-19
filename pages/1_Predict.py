@@ -3,9 +3,9 @@ import torch
 import shap
 import numpy as np
 import re
-from pathlib import Path
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
+
+from utils.model_loader import load_model
 
 st.title("🔍 Predict Job Authenticity")
 
@@ -13,14 +13,10 @@ st.title("🔍 Predict Job Authenticity")
 # Load Model
 # -------------------------------------------------
 @st.cache_resource
-def load_model():
-    model_path = Path(__file__).resolve().parent.parent / "models" / "fake_job_model"
-    tokenizer = AutoTokenizer.from_pretrained(model_path)
-    model = AutoModelForSequenceClassification.from_pretrained(model_path)
-    model.eval()
-    return tokenizer, model
+def load_cached_model():
+    return load_model()
 
-tokenizer, model = load_model()
+tokenizer, model = load_cached_model()
 
 # -------------------------------------------------
 # SHAP Prediction Wrapper
