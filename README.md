@@ -1,6 +1,7 @@
 # 🤖 AI Fake Job Detection System
 
 A Machine Learning-based web application that analyzes job posting information and predicts whether a job posting is **FAKE** or **REAL**.
+Available live on - https://fakejobclassifier-g963quarpuhabrimc3wcx5.streamlit.app/
 
 ## 🎯 Project Objective
 
@@ -9,7 +10,7 @@ The main objective of this project is to help job seekers identify potentially f
 The system uses Natural Language Processing (NLP) and Machine Learning techniques to analyze job posting content.
 
 ## 🧠 How It Works
-<img width="1897" height="1052" alt="image" src="https://github.com/user-attachments/assets/efdbc034-1d35-4955-a72c-5742212acbbe" />
+<img width="1053" height="742" alt="image" src="https://github.com/user-attachments/assets/f51f8c6b-481f-45a7-9357-364055084578" />
 
 1. The user enters job posting details.
 2. The system combines the relevant text fields.
